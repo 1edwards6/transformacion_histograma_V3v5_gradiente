@@ -166,9 +166,9 @@ with tab_comparacion:
         with col:
             st.image(R["resultados_visuales"][name], caption=name, use_container_width=True)
     st.caption("Las métricas se calculan sobre la intensidad en escala de grises. En imágenes a color, las transformaciones se visualizan modificando el canal de luminancia L en Lab, como en el cuaderno fuente.")
-    st.subheader("Comparación V3 global y V3 local")
+    st.subheader("Comparación Original y V3 local")
     a, b = st.columns(2)
-    a.image(R["resultados_visuales"]["V3 global"], caption="V3 global", use_container_width=True)
+    a.image(R["resultados_visuales"]["Original"], caption="Original", use_container_width=True)
     b.image(R["resultados_visuales"][R["nombre_local"]], caption=R["nombre_local"], use_container_width=True)
     st.dataframe(R["tabla_metricas"].round(4), use_container_width=True)
 
